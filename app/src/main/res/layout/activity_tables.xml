@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_1"
+    android:gravity="center"
+    tools:context=".tables">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txttables"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter your number :"
+            android:textColorHint="#FFFCFC"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="Enter"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_1"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/txttablesno"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="your ans is  :"
+            android:textColorHint="#FBF6F6"
+            android:lineSpacingExtra="10dp"
+            android:textColor="#FBFBFB"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

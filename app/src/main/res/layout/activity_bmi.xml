@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:orientation="vertical"
+    android:id="@+id/layout1"
+    tools:context=".Bmi">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+           app:shapeAppearanceOverlay="@style/customcorner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+        
+
+    </androidx.cardview.widget.CardView>
+    
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="--->"
+            android:textStyle="bold"/>
+        
+        <EditText
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Weight in KG"
+            android:id="@+id/txt1"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="--->"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Height in Ft"
+            android:id="@+id/txt2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="--->"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Height in IN"
+            android:id="@+id/txt3"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:shapeAppearanceOverlay="@style/circle"
+        android:src="@drawable/ok_button" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:hint="Your result"
+            android:textStyle="bold"
+
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#0C0B0B"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt4"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
