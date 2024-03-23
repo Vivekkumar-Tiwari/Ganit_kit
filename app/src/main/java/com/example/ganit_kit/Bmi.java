@@ -2,6 +2,8 @@ package com.example.ganit_kit;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
@@ -18,17 +20,29 @@ public class Bmi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
 
+
+        Button fragbtn;
         EditText wt,ft,inch;
         TextView txtview;
-       ImageView btn;
+        TextView btn;
        CardView card1;
 
-        btn = findViewById(R.id.btn);
+       fragbtn = findViewById(R.id.male);
         card1 = findViewById(R.id.card);
         wt = findViewById(R.id.txt1);
         ft = findViewById(R.id.txt2);
         inch = findViewById(R.id.txt3);
         txtview = findViewById(R.id.txt4);
+        btn = findViewById(R.id.btn01);
+
+        fragbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new male_fragment();
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container,fragment).commit();
+            }
+        });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

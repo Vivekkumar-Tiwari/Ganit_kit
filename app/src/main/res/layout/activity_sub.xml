@@ -1,137 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
     android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/light_pink"
     tools:context=".sub">
 
-    <LinearLayout
-        android:layout_marginTop="30dp"
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="206dp"
+        android:layout_height="258dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:strokeWidth="10dp"
-            app:strokeColor="#366E8A"
-            android:src="@drawable/sublogo"
-            android:id="@+id/btnid"
-            app:shapeAppearanceOverlay="@style/corner"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.cardview.widget.CardView
-
-            android:layout_width="130dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="10dp"
-            app:cardUseCompatPadding="true">
-
-            <ImageView
-                android:id="@+id/imagebtn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_1" />
-
-            <EditText
-                android:id="@+id/a_id"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:inputType="number"
-                android:hint="A"
-                android:textSize="50dp"
-                android:textColorHint="#FDF8F8"
-                android:textColor="#fff"
-                android:gravity="center"/>
-
-        </androidx.cardview.widget.CardView>
-
-       <TextView
-           android:layout_width="70dp"
-           android:layout_height="70dp"
-           android:text="-"
-           android:textColor="#fff"
-           android:textSize="60dp"
-           android:gravity="center"/>
-
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="10dp"
-            app:cardUseCompatPadding="true">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_1" />
-
-            <EditText
-                android:id="@+id/b_id"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:inputType="number"
-                android:hint="B"
-                android:textSize="50dp"
-                android:textColorHint="#FDF8F8"
-                android:textColor="#fff"
-                android:gravity="center"/>
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/onemore" />
+
+    <EditText
+
+        android:id="@+id/firstoption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
-        <androidx.cardview.widget.CardView
-            android:layout_width="250dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="5dp">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_1"
-                android:scaleType="centerCrop"/>
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/girl"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="fill_horizontal"
+        android:hint="Enter first value"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFB300" />
 
-            <TextView
-                android:id="@+id/textviewid"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:inputType="number"
-                android:hint="a - b = c"
-                android:textSize="50dp"
-                android:textColorHint="#FDF8F8"
-                android:textColor="#fff"
-                android:gravity="center"/>
+    <EditText
+        android:id="@+id/secondOption"
+        android:background="@drawable/girl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="fill_horizontal"
+        android:hint="Enter Second value"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFB300" />
 
-        </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/girl"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="fill_horizontal"
+        android:hint="Your output"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFB300"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="121dp"
+            android:layout_height="118dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_for_bmi"
+            android:padding="10dp"
+            android:text="+"
+            android:textColor="#FFB300"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/mul"
+            app:layout_constraintEnd_toStartOf="@+id/div"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="121dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_for_bmi"
+            android:padding="10dp"
+            android:text="-"
+            android:textColor="#FFB300"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="121dp"
+            android:layout_height="118dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_for_bmi"
+            android:padding="10dp"
+            android:text="*"
+            android:textColor="#FFB300"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sub"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="121dp"
+            android:layout_height="118dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_for_bmi"
+            android:padding="10dp"
+            android:text="÷"
+            android:textColor="#FFB300"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/sub"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-    </LinearLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

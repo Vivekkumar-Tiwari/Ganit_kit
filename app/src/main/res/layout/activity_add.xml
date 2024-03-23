@@ -12,18 +12,7 @@
         android:layout_marginTop="30dp"
        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:strokeWidth="10dp"
-            app:strokeColor="#366E8A"
-            android:src="@drawable/additionlogo"
-            android:id="@+id/btnid"
-            app:shapeAppearanceOverlay="@style/corner"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_marginTop="80dp"
@@ -63,8 +52,10 @@
 
             <ImageView
                 android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/baseline_add_24"/>
+                android:layout_height="70dp">
+
+            </ImageView>
+<!--                android:src="@drawable/baseline_add_24"/>-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="130dp"

@@ -9,12 +9,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView txtbtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView txtbtn = findViewById(R.id.txtbtn);
+        txtbtn = findViewById(R.id.txtbtnforpage);
         txtbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

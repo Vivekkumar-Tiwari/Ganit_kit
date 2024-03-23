@@ -12,34 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ganit_kit"
         tools:targetApi="31">
-        <activity
-            android:name=".div"
-            android:exported="false"
-            android:label="@string/title_activity_div"
-            android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".mul"
-            android:exported="false"
-            android:label="@string/title_activity_mul"
-            android:theme="@style/Theme.Ganit_kit" />
+
         <activity
             android:name=".sub"
             android:exported="false"
             android:label="@string/title_activity_sub"
             android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".Div"
-            android:exported="false" />
+
         <activity
             android:name=".add"
             android:exported="false"
             android:label="@string/title_activity_add"
             android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".square"
-            android:exported="false"
-            android:label="@string/title_activity_square"
-            android:theme="@style/Theme.Ganit_kit" />
+
         <activity
             android:name=".tables"
             android:exported="false"
@@ -50,29 +35,9 @@
             android:exported="false"
             android:label="@string/title_activity_bmi"
             android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".Tables"
-            android:exported="false"
-            android:label="@string/title_activity_tables"
-            android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".starting"
-            android:exported="false"
-            android:label="@string/title_activity_starting"
-            android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".defaultui"
-            android:exported="false"
-            android:label="@string/title_activity_defaultui"
-            android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".bmi"
-            android:exported="false"
-            android:label="@string/title_activity_bmi"
-            android:theme="@style/Theme.Ganit_kit" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -82,6 +47,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -21,10 +21,11 @@ public class MainActivity2 extends AppCompatActivity implements logointerface{
         RecyclerView rv = findViewById(R.id.recyclerview);
         rv.setLayoutManager(new LinearLayoutManager(this));
 
-        arrfeatures.add(new logomodel(R.drawable.bmi,"Body Mass Index"));
-        arrfeatures.add(new logomodel(R.drawable.tables,"Tables"));
-        arrfeatures.add(new logomodel(R.drawable.addition,"a  +  b"));
-        arrfeatures.add(new logomodel(R.drawable.substraction,"a  -  b"));
+        arrfeatures.add(new logomodel(R.drawable.bmiji,"BMI :-","Body mass index"));
+        arrfeatures.add(new logomodel(R.drawable.maths_table,"Tables :-","From 1 to 50"));
+        arrfeatures.add(new logomodel(R.drawable.abcd,"Alphabet's :-","A to Z"));
+        arrfeatures.add(new logomodel(R.drawable.operation,"Arthmatic's :-"," Operation's"));
+
 
 
 

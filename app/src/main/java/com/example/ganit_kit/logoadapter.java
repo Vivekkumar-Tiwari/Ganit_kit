@@ -36,7 +36,10 @@ public class logoadapter extends RecyclerView.Adapter<logoadapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.img1.setImageResource(arrfeatures.get(position).img);
-        holder.txt1.setText(arrfeatures.get(position).txt);
+        holder.txt1.setText(arrfeatures.get(position).txt01);
+        if (holder.txt2 != null) {
+            holder.txt2.setText(arrfeatures.get(position).txt02);
+        }
     }
 
     @Override
@@ -47,25 +50,26 @@ public class logoadapter extends RecyclerView.Adapter<logoadapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         ImageView img1;
-        TextView txt1;
+        TextView txt1, txt2;
 
         public ViewHolder(View items, logointerface linterface){
             super(items);
 
-          img1 =items.findViewById(R.id.imageid);
-          txt1 =items.findViewById(R.id.txtid);
+            img1 =items.findViewById(R.id.img1);
+            txt1 =items.findViewById(R.id.txt1);
+            txt2 =items.findViewById(R.id.txt2); // Initialize txt2 here
 
-          itemView.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View view) {
-                  if(logoadapter.this.logointerface5 != null){
-                      int pos =getAdapterPosition();
-                      if(pos != RecyclerView.NO_POSITION){
-                          logoadapter.this.logointerface5.methodname(pos);
-                      }
-                  }
-              }
-          });
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(logoadapter.this.logointerface5 != null){
+                        int pos =getAdapterPosition();
+                        if(pos != RecyclerView.NO_POSITION){
+                            logoadapter.this.logointerface5.methodname(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }
