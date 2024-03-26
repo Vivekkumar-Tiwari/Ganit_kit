@@ -18,13 +18,11 @@
             android:exported="false"
             android:label="@string/title_activity_sub"
             android:theme="@style/Theme.Ganit_kit" />
-
         <activity
             android:name=".add"
             android:exported="false"
             android:label="@string/title_activity_add"
             android:theme="@style/Theme.Ganit_kit" />
-
         <activity
             android:name=".tables"
             android:exported="false"
@@ -35,11 +33,11 @@
             android:exported="false"
             android:label="@string/title_activity_bmi"
             android:theme="@style/Theme.Ganit_kit" />
-
-
-
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,9 +45,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+        <activity android:name=".MainActivity" />
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

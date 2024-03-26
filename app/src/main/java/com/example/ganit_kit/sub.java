@@ -14,7 +14,7 @@ public class sub extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sub);
 
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
@@ -41,7 +41,6 @@ public class sub extends AppCompatActivity {
                     double b = Integer.parseInt(editText2.getText().toString());
                     double c = a + b;
                     ans.setText("Answer: " + c);
-                    ans.setBackgroundColor(getColor(R.color.black));
                 } catch (NumberFormatException e) {
                     // Handle invalid input (non-numeric values)
                     ans.setText("Invalid input");
@@ -64,7 +63,7 @@ public class sub extends AppCompatActivity {
                     double b = Integer.parseInt(editText2.getText().toString());
                     double c = a - b;
                     ans.setText("Answer: " + c);
-                    ans.setBackgroundColor(getColor(R.color.black));
+
                 } catch (NumberFormatException e) {
                     // Handle invalid input (non-numeric values)
                     ans.setText("Invalid input");
@@ -81,7 +80,7 @@ public class sub extends AppCompatActivity {
                     double b = Integer.parseInt(editText2.getText().toString());
                     double c = a * b;
                     ans.setText("Answer: " + c);
-                    ans.setBackgroundColor(getColor(R.color.black));
+
                 } catch (NumberFormatException e) {
                     // Handle invalid input (non-numeric values)
                     ans.setText("Invalid input");
@@ -98,7 +97,6 @@ public class sub extends AppCompatActivity {
                     double b = Integer.parseInt(editText2.getText().toString());
                     double c = a / b;
                     ans.setText("Answer: " + c);
-                    ans.setBackgroundColor(getColor(R.color.black));
                 } catch (NumberFormatException e) {
                     // Handle invalid input (non-numeric values)
                     ans.setText("Invalid input");

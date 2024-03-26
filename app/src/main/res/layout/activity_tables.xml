@@ -21,15 +21,15 @@
         <EditText
             android:id="@+id/txttables"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/input"
             android:hint=" Enter your number "
             android:inputType="number"
-            android:paddingStart="10dp"
             android:textColor="@color/black"
+            android:padding="20dp"
             android:textColorHint="#988C8C"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/txtbtn"
@@ -41,6 +41,7 @@
             android:gravity="center"
             android:text="click"
             android:textColor="#F8F2F2"
+            android:layout_gravity="center"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -53,10 +54,16 @@
         android:layout_height="561dp"
         android:layout_gravity="center"
         app:cardCornerRadius="20dp"
-        app:cardElevation="5dp"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp">
 
 
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bac01_car"/>
         <TextView
             android:id="@+id/txttablesno"
             android:layout_width="180dp"
@@ -64,9 +71,11 @@
             android:layout_gravity="center"
             android:hint="your ans is  :"
             android:lineSpacingExtra="10dp"
-            android:textColor="#0C0B0B"
-            android:textColorHint="#988C8C"
+            android:textColor="#FFFCFC"
+            android:gravity="center"
+            android:textColorHint="#FDFCFC"
             android:textSize="25dp" />
+
     </androidx.cardview.widget.CardView>
 
 
