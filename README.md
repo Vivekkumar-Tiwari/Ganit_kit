@@ -1,3 +1,4 @@
 ## view as a Ref
-![image](https://github.com/Vivekkumar-Tiwari/Ganit_kit/assets/158731018/8bfebb13-198b-456e-b097-c25f450fd9e3)
+<img width="1728" alt="MacBook Pro 16_ - 2 (1)" src="https://github.com/user-attachments/assets/07404b7d-ca5a-4736-b5f3-fab603970048">
+
 
